@@ -5,7 +5,7 @@ import Banner from './Banner';
 
 function Homescreen() {
   return (
-    <div classname="Homescreen">
+    <div className="Homescreen">
         <Nav />
 
         <Banner />
