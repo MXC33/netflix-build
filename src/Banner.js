@@ -9,7 +9,6 @@ function Banner() {
 
     useEffect(() => {
       async function fetchData() {
-        console.log(requests.fetchNetflixOriginals);
         const request = await axios.get(requests.fetchNetflixOriginals);
         setMovie(
           request.data.results[
@@ -31,7 +30,7 @@ function Banner() {
   return <header className='banner' style={{
     backgroundSize: "cover",
     // backgroundImage: `url("https://tinyurl.com/netflixbanner")`,
-    backgroundImage: `url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsKRhExiG-UWq_bZrngMY9rtEK9zscnYrJBw&s")`,
+    backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
     backgroundPosition: "center center",
   }}>
 
