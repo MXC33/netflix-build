@@ -1,13 +1,13 @@
 import React from "react";
-import Banner from "./Banner";
-import "./Homescreen.css";
-import Nav from "./Nav";
-import requests from "./Requests";
-import Row from "./Row";
+import Banner from "../Banner";
+import "./HomeScreen.css";
+import Nav from "../Nav";
+import requests from "../Requests";
+import Row from "../Row";
 
-function Homescreen() {
+function HomeScreen() {
   return (
-    <div className="Homescreen">
+    <div className="HomeScreen">
       <Nav />
 
       <Banner />
@@ -28,4 +28,4 @@ function Homescreen() {
   );
 }
 
-export default Homescreen;
+export default HomeScreen;
