@@ -1,0 +1,41 @@
+.plansScreen_plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.plansScreen_plan:hover {
+  opacity: 1;
+}
+
+.plansScreen_plan button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.plansScreen_plan--disabled button {
+  background-color: gray !important;
+}
+
+/* Center plans on mobile */
+@media (max-width: 768px) {
+  .plansScreen_plan {
+    flex-direction: column;
+    align-items: center; /* Center the items */
+    width: 90%; /* Ensure plans are not too wide */
+    margin: 10px auto; /* Center plans with spacing */
+  }
+
+  .plansScreen_plan button {
+    width: 80%; /* Make button width responsive */
+    margin-top: 10px; /* Add spacing between text and button */
+    margin-left: 20px; /* Remove left margin */
+  }
+}
