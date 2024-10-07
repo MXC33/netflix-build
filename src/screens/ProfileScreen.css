@@ -7,18 +7,26 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 8%;
   max-width: 800px;
+  margin: 0 auto;
+  padding-top: 8%;
 }
 
 .profileScreen_info {
   display: flex;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 .profileScreen_info img {
   height: 100px;
+  margin-left: 25px;
+}
+
+.profileScreen_details {
+  color: white;
+  margin-left: 25px;
+  flex: 1;
 }
 
 .profileScreen_body h1 {
@@ -28,30 +36,19 @@
   margin-bottom: 20px;
 }
 
-.profileScreen_details {
-  color: white;
-  margin-left: 25px;
-  flex: 1;
-}
-
-.profileScreen_info img {
-  height: 100px;
-}
-
 .profileScreen_details h2 {
   background-color: gray;
-  padding: 15px;
+  padding: 15px 20px;
   font-size: 15px;
-  padding-left: 20px;
+}
+
+.profileScreen_plans {
+  margin-top: 20px;
 }
 
 .profileScreen_plans h3 {
   border-bottom: 1px solid #282c2d;
   padding-bottom: 10px;
-}
-
-.profileScreen_plans {
-  margin-top: 20px;
 }
 
 .profileScreen_signOut {
@@ -64,4 +61,37 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .profileScreen_body {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profileScreen_body h1 {
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  .profileScreen_info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .profileScreen_details {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .plansScreen_plan button {
+    width: 90%;
+    margin: 10px auto;
+  }
 }

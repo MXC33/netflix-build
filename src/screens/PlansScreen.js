@@ -132,6 +132,7 @@ function PlansScreen() {
               <h6>{productData.description}</h6>
             </div>
             <button
+              className="plansScreen_subscribing"
               onClick={() =>
                 !isCurrentPackage && loadCheckout(productData.prices.priceId)
               }
